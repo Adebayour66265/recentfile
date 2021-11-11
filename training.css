@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: white;
+    filter: drop-shadow(2px 2px 2px);
+    transition: 1.5s ease;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.logo a{
+
+    padding: 5px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 50px;
+}
+.logo a span{
+    font-weight: 300;
+    color: gray;
+    text-transform: lowercase;
+}
+.logo:hover{
+    color: gray;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: gray;
+}
+
+.menu-bar ul li{
+    padding: 10px;
+    margin: 0 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+.menu-bar ul li .logo{
+    font-size: 40px;
+    color: dodgerblue;
+}
+.menu-bar ul li a span{
+    color: grey;
+}
+.sub-menu-1{
+    display: none;
+}
+.sub-menu-1 ul li a{
+    color: #333;
+    font-size: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    background: #fff;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 0px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+    background: transparent;
+}
+.menu-bar li button{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    font-size: 20px;
+}
+
+.hamburger-wrapper{
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* MEDIA QUERY */
+@media only screen and (max-width: 900px){
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 40px;
+      width: 100%;
+      background-color: #fff;
+      overflow:hidden;
+      filter: drop-shadow(7px 3px 6px #585858);
+  }
+    .hamburger-wrapper{
+      display: block;
+      color: black;
+      cursor: pointer;
+      font-size: 25px;
+    }  
+    .menu-bar{
+     display: none;
+     color: black;
+    }
+    .open-nav-items{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      width: 100px;
+      text-align: left;
+      margin-left: -110%;
+      color: black;
+    }
+    .nav-links{
+      height: 40px;
+      color: black;
+    }
+    .menu-bar ul li:first-child{
+        color: dodgerblue;
+    }
+    .menu-bar ul li :last-child{
+        color: dodgerblue;
+    }
+    .menu-bar ul li:hover{
+        color: dodgerblue;
+    }
+}
